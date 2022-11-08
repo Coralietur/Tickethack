@@ -1,0 +1,43 @@
+.gauche{
+    border: 1px solid rgb(11, 189, 112);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    float: left
+
+}
+.droit{
+    border: 1px solid rgb(255, 3, 3);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    float: right
+}
+body {
+    margin:0;
+    background-image:url("/tickethack/images/background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header { padding: 12px;
+    background-color: rgb(231, 236, 240);
+    border-radius: 4px;
+    justify-content: space-between;
+    font-size: 15px;
+
+ }
+#div2header{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+ }
+p{
+    color: aliceblue;
+    text-align: center;
+
+}

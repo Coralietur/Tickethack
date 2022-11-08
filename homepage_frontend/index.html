@@ -5,17 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickethack</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <!--header-->
+<div class="header">
+    <nav class="menu">
+    <a href="tickethack">Tickethack</a>
+ <div2header id="div2header">
+    <a href="cart">Cart</a>
+    <a href="Bookings">Bookings</a>
+  </div2header>
+</div>
+</nav>
+    <!--fin du header-->
+
     <h1>Explore the world effortlessy by train</h1>
     <p>Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack.</p>
-<div>
+
+<div class="gauche">
     <input type="text" name="departure" placeholder="departure" />
     <input type="text" name="arrival" placeholder="arrival" />
     <input type="date" />
+    <button id="search"
+        type="button">Search</button>
+
 </div>
-<div>
-    
+
+<div class="droit">
+<img src="/tickethack/images/train.png">
+<p>It's time to book your future trip.</p>
 </div>
+
+<!--2eme alternative
+<img src="tickethack\images\notfound.png">
+<p> No trip found.
+-->
+
+</div>
+<script src="script.js"></script>
 </body>
 </html>

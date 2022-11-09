@@ -3,21 +3,14 @@ var router = express.Router();
 
 const Trip = require('./models/trips');
 
-router.post('/signin', (req, res) => {
-    if (!checkBody(req.body, ['email', 'password'])) {
-      res.json({ result: false, error: 'Missing or empty fields' });
-      return;
-    }
-  
-    User.findOne({ email: req.body.email, password: req.body.password }).then(data => {
-      if (data) {
-        res.json({ result: true });
+router.get('/trips', (req, res) => {
+  const tripsFound = Trip.find(e => e.departure === req.params.departure & e.arrival === req.params.arrival & e.date === req.params.date);
+      if (tripsFound) {
+        res.json({ result: true, tripList : tripsFound });
       } else {
-        res.json({ result: false, error: 'User not found' });
+        res.json({ result: false, error: 'no trip found' });
       }
     });
-  });
-
 
 
 module.exports = router;
